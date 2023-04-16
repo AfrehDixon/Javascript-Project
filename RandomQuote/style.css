@@ -1,0 +1,44 @@
+.quote-container{
+    border:1px solid red;
+    width: auto;
+    height: 100vh;
+    background-color: aqua;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.button{
+    padding: 10px;
+    background-color: rgb(18, 130, 68);
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+.quote{
+    width: 200px;
+    margin-bottom:20px;
+    background-color: rgb(83, 93, 63);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+
+
+}
+.writer{
+    color:pink;
+    font-size:20px;
+    font-style:italic:
+}
