@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+    
+    <title>Document</title>
+</head>
+<body class="">
+    <div class="container mt-5 ">
+        <div class=" alert alert-success alert-dismissable fade show">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="alert"></button> -->
+            <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+   
+    
+        <div class="alert alert-success alert-dismissible fade show">
+            <button type="button" class="btn-check" data-bs-dismiss="alert"> </button>
+            <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+        
+        <!-- Button -->
+        <a href="#" class="btn btn-outline-primary btn-sm active">Close</a>
+        <a href="#" class="btn btn-outline-warning btn-sm disabled">Warning</a>
+        <button type="button" class="btn btn-outline-primary btn-sm active" >
+            <span class="spinner-border spinner-border-sm text-success"></span> Loading...
+        </button>
+        <button type="button" class="btn btn-outline-primary btn-sm disabled" >
+            <span class="spinner-grow  spinner-grow-sm text-danger"></span> Loading...
+        </button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Barcalona</button>
+            <button type="button" class="btn btn-primary">Corolla</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Sony</button>
+                <div class="dropdown-menu">
+                    <li class="dropdown-item"><a href="http://">iphone</a></li>
+                    <li class="dropdown-item"><a href="http://">Sumsung</a></li>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Sony</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Tablet</a>
+                <a class="dropdown-item" href="#">Smartphone</a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Badge -->
+          <span class="badge bg-danger rounded-pill p-2">New here?</span>
+
+          <button class="btn btn-primary">
+            Message <span class="badge bg-success rounded-pill  ">4 new</span>
+          </button>
+
+          <!-- Image fluid -->
+          <img src="./maarten-van-den-heuvel-Siuwr3uCir0-unsplash.jpg" class="img-fluid rounded-pill" alt="" width="100" height="30">
+
+          <!-- Progress bar -->
+          <div class="progress" style="height: 20px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 40%; height: 20px;"></div>
+
+          </div>
+
+          <!-- List gorund with badge -->
+          <div class="list-group mt-3 w-auto">
+            <div class="list-group-item d-flex justify-content-between align-items-center pointer-event" onclick="displaymessage()">
+                Inbox
+                <span class="badge bg-success">55</span>
+
+            </div>
+            <div class="list-group-item d-flex justify-content-between align-items-center" >
+                outbox
+                <span class="badge bg-warning">55</span>
+
+            </div>
+            <div class="list-group-item d-flex justify-content-between align-items-center">
+                Draft
+                <span class="badge bg-danger">55</span>
+
+            </div>
+
+          </div>
+
+          <!-- Drop down -->
+          <div class="dropdown">
+            <a href="#" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" >ABOUT</a>
+            <div class="dropdown-menu dropdown " >
+    
+                    <li  class="dropdown-item"><a href="#">Services</a></li>
+                    <li class="dropdown-item"><a href="#">Contact</a></li>
+                    <li class="dropdown-item"><a href="#">List</a></li>
+        
+            </div>
+        </div>
+        
+        <!-- COLLAPSE -->
+        <div>
+            <a href="#info" class="btn btn-primary" data-bs-toggle="collapse">Info</a>
+            <div class="collapse " id="info">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, numquam!
+
+            </div>
+        </div>
+
+        <!-- ACCORDION -->
+        <div id="accordion" class="m-3">
+            <div class="card">
+                <h5 class="card-header">
+                    <a href="#sever" class="btn " data-bs-toggle="collapse" >info</a>
+                </h5>
+            </div>
+            <div class=" collapse p-2 bg-secondary" id="sever" data-bs-parent="#accordion">
+                Lorem ipsum dolor sit amet <hr>consectetur adipisicing elit.
+                 Ipsum expedita deleniti officia, illum facere maxime.
+            </div>
+            <div class="card">
+                <h5 class="card-header">
+                    <a href="#severtwo" class="btn " data-bs-toggle="collapse" >info</a>
+                </h5>
+            </div>
+            <div class=" collapse " id="severtwo" data-bs-parent="#accordion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Ipsum expedita deleniti officia, illum facere maxime.
+            </div>
+            <div class="card">
+                <h5 class="card-header">
+                    <a href="#severthree" class="btn " data-bs-toggle="collapse" >info</a>
+                </h5>
+            </div>
+            <div class=" collapse " id="severthree" data-bs-parent="#accordion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Ipsum expedita deleniti officia, illum facere maxime.
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./maarten-van-den-heuvel-Siuwr3uCir0-unsplash.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+    </a>
+  </div>
+</nav>
+
+
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        Logo
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="" class="navbar-brand text-danger">LOGO</a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="Home" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="Home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="Home" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="Home" class="nav-link">Account</a>
+            </li>
+        </ul>
+    </div>
+      </div>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- Bootstrap js link -->
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+</html>

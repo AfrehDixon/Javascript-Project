@@ -1,0 +1,40 @@
+:root{
+    --bcolor:pick;   
+}
+    
+    
+    
+    table ,td, tr,th{
+    border: 1px solid;
+    padding: 10px;
+    border-collapse: collapse;
+    align-items: center;
+
+}
+th{
+    background-color: var(--bcolor);
+    margin: 10px;
+}
+
+section .container{
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+    border: 1px solid blue;
+    margin: 10px 10px 30px 20px;
+    background-color: #c2a1d7;
+}
+
+.container > p{
+    padding: 20px 10px 30px 40px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+section >#box{
+    color: yellow;
+    font-size: 50px;
+    font-weight: 700;
+    background-color: rgb(88, 40, 40);
+}
